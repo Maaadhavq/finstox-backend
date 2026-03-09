@@ -8,8 +8,8 @@ from jose import JWTError, jwt
 from datetime import datetime, timedelta
 
 
-SECRET_KEY = os.getenv("JWT_SECRET")
-ALGORITHM = os.getenv("ALGORITHM")
+SECRET_KEY = os.getenv("JWT_SECRET") or "124890sadf8u92348u0sfjadklsfjsdflksjdf-finstox-backend-secret"
+ALGORITHM = os.getenv("ALGORITHM") or "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 9999
 
 pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
