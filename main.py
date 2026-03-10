@@ -1,5 +1,6 @@
 import os
-os.environ["COMPLUS_Version"] = "v4.0.30319"
+# compatibility workaround for windows dev
+# os.environ["COMPLUS_Version"] = "v4.0.30319"
 
 import json
 import nsepython as nse
